@@ -1,0 +1,139 @@
+.header_bg {
+  background: #EFEDED;
+  opacity: 0.95;
+  height: 71px;
+  width: 100%;
+  z-index: 5;
+}
+
+.header_nav li a {
+  color: #1E1E1E;
+}
+
+.header_menu {
+  color: #1E1E1E !important;
+}
+
+@media (max-width: 870px) {
+  .header_nav ul {
+    background: #EFEDED !important;
+  }
+  .header_nav ul li a {
+    color: #1E1E1E !important;
+  }
+}
+.header_clients-btn a:first-child {
+  color: #1E1E1E !important;
+}
+
+.company {
+  background: #EFEDED;
+}
+
+.introduce {
+  background: #EFEDED;
+}
+
+.introduce_text-title {
+  color: #1E1E1E !important;
+}
+
+.introduce_text-sub {
+  color: #1E1E1E !important;
+}
+
+.introduce_text-btn a {
+  color: #fff !important;
+  background: #1E1E1E !important;
+}
+@media (any-hover: hover) {
+  .introduce_text-btn a:hover {
+    background: #1EE1B3 !important;
+  }
+}
+
+.need_content-title {
+  color: #1E1E1E !important;
+}
+
+.need_text-title {
+  color: #1E1E1E !important;
+}
+
+.need_text-sub {
+  color: #1E1E1E !important;
+}
+
+.need_item-img {
+  background: #1EE1B3 !important;
+}
+
+.play {
+  background: #2A2320 !important;
+}
+
+.how {
+  background: #3A322F !important;
+}
+
+.how_btn a {
+  background: #08080C !important;
+  color: #fff !important;
+}
+@media (any-hover: hover) {
+  .how_btn a:hover {
+    background: #1EE1B3 !important;
+  }
+}
+
+.accordion_contents-img svg {
+  stroke: #565660 !important;
+}
+
+.accordion_contents-title {
+  color: #565660 !important;
+}
+
+.content_text p {
+  color: #565660 !important;
+}
+
+body {
+  background: #fff !important;
+}
+
+.jacket {
+  background: #EFEDED;
+}
+
+.jacket_button-prev:after, .swiper-rtl .jacket_button-next:after {
+  content: url(../img/jacket/arrow/prev.svg) !important;
+  position: absolute;
+  right: -25px;
+}
+
+.jacket_button-next:after, .swiper-rtl .jacket_button-prev:after {
+  content: url(../img/jacket/arrow/nextlight.svg) !important;
+}
+
+.brand_title {
+  color: #08080C !important;
+}
+
+.human_content-text {
+  color: #08080C !important;
+}
+
+.human_content-btn a {
+  background: #08080C !important;
+  color: #fff !important;
+}
+@media (any-hover: hover) {
+  .human_content-btn a:hover {
+    background: #1EE1B3 !important;
+  }
+}
+
+.sweater {
+  background: #09090C !important;
+}

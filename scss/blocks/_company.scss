@@ -1,0 +1,46 @@
+.company {
+   &_container {
+   position: relative;
+
+   }
+
+   &_title {
+      position: absolute;
+      top: -80px;
+      left: 0;
+      font-size: clamp(6.25rem, 4.205rem + 10.23vw, 11.875rem);
+      line-height: 190px;
+      /* identical to box height */
+      
+      
+      color: #252528;
+      
+      opacity: 0.1;
+      font-weight: 700;
+       @media (max-width: 768px) {
+         display: none;
+       }
+   }
+
+   &_items {
+      padding-top: 80px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+       @media (max-width: 768px) {
+         padding-top: 30px;
+         justify-content: space-between;
+       }
+  
+   }
+
+   &_item {
+      margin-right: 10px;
+      &:last-child{
+         margin-right: 0;
+      }
+      img{
+         width: 100%;
+      }
+   }
+}

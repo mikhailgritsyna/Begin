@@ -1,0 +1,53 @@
+.play {
+   background: #0C0C11;
+   margin-top: -3px;
+   &_container {
+   }
+
+   &_title {
+      padding-top: clamp(3.75rem, 2.841rem + 4.55vw, 6.25rem);
+    
+
+      font-size:clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem);
+      line-height: clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem);
+      text-align: center;
+      margin-bottom: 40px;
+      color: #FFFFFF;
+      font-weight: 600;
+      span{
+         display: block;
+      }
+      .play_line{
+         margin-top: 20px;
+          div{
+         
+         display: block;
+         width: 85px;
+         height: 3px;
+         background-color: #1EE1B3;
+         margin: 0 auto;
+      }
+      }
+     
+   }
+
+   &_img {
+      text-align: center;
+      padding-top: clamp(0.938rem, 0.597rem + 1.7vw, 1.875rem);
+      padding-bottom: clamp(3.75rem, 2.841rem + 4.55vw, 6.25rem);
+      svg{
+               transition: all 0.2s ease-in;
+          @media (any-hover: hover){
+               &:hover{
+                     rect{
+                        stroke: #1EE1B3;
+                }
+                      path{
+                        fill: #1EE1B3;
+          }
+                  }
+         }
+        
+      }
+   }
+}

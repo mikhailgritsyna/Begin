@@ -1,0 +1,8 @@
+.header_bg{
+   z-index: 5;
+   
+   background: #08080C;
+   opacity: 0.95;
+   height: 71px;
+   width: 100%;
+} 

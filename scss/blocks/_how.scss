@@ -1,0 +1,104 @@
+.how {
+   padding-top: clamp(3.125rem, 0.852rem + 11.36vw, 9.375rem);
+   padding-bottom:clamp(4.5rem, 4.114rem + 1.93vw, 5.563rem);
+   &_container {
+   }
+
+   &_title {
+      font-weight: 600;
+      font-size: clamp(1.375rem, 1.148rem + 1.14vw, 2rem);
+      line-height: clamp(1.375rem, 1.148rem + 1.14vw, 2rem);
+      /* identical to box height */
+      
+      text-align: center;
+      position: relative;
+      color: #FFFFFF;
+      &::before{
+         content: "";   
+         width: 43px;
+         display: block;
+         left: 50%;
+         bottom: -30px;
+         border-radius: 50px;
+         z-index: 5;
+         position: absolute;
+         height: 3px;
+         margin: 0 auto;
+         background-color: #1EE1B3;
+          @media (max-width: 500px) {
+            left: 47%;
+          }
+      }
+   
+           
+   }
+
+   &_items {
+      margin-top: 76px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      gap: 60px;
+      @media (max-width: 890px) {
+         gap: 40px;
+      }
+       @media (max-width: 840px) {
+         gap: 20px;
+       }
+        @media (max-width: 760px) {
+         flex-direction: column;
+         justify-content: center;
+        }
+   }
+
+   &_item {
+
+      background: #0C0C11;
+      padding: 30px;
+      @media (max-width: 760px) {
+         width: 70%;
+        }
+         @media (max-width: 520px) {
+            width: 100%;
+         }
+   }
+
+   &_item-title {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 20px;
+      padding-bottom: 24px;
+      max-width: 156px;
+      color: #FFFFFF;
+      position: relative;
+      &::before{
+         content: url(../img/how.svg);   
+         position: absolute;
+         right: 0;
+         top: 0;
+         display: block;
+         
+      }
+      
+   }
+
+   &_item-sub {
+      max-width: 249px;
+      font-family: 'Proxima Nova';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      
+      color: #FFFFFF;
+       @media (max-width: 760px) {
+         max-width: 100%;
+       }
+   }
+
+   &_btn {
+      margin-top: 71px;
+      text-align: center;
+   }
+}

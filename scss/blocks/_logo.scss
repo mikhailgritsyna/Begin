@@ -1,0 +1,56 @@
+.logo {
+   background: #09090C !important;
+   padding-top: clamp(3.125rem, 1.989rem + 5.68vw, 6.25rem);
+   @media (max-width: 550px) {
+      padding-top: 80px;
+    }
+   &_container {
+      
+   }
+
+   &_title {
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 64px;
+      /* identical to box height */
+      
+      
+      color: #FFFFFF;
+
+      text-align: center;
+      position: relative;
+      &::before{
+         content: "";   
+         text-align: center;
+         position: absolute;
+         top: -40px;
+         width: 51px;
+         margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+         height: 36px;
+         background-image: url(../img/ico/rectangle.svg);
+         background-repeat: no-repeat;
+      }
+   }
+   &_social-item{
+      cursor: pointer;
+   }
+   &_social {
+      margin-top: 33px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 33px;
+      img{
+         width: 26px;
+         height: 26px;
+      }
+      &:last-child{
+         
+         margin-right: 0;
+      }
+   }
+}

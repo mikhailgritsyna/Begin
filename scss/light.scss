@@ -1,0 +1,47 @@
+@import "./light/header";
+
+@import "./light/company";
+@import "./light/introduce";
+@import "./light/need";
+@import "./light/play";
+@import "./light/how";
+@import "./light/accordion";
+
+body{
+   background: #fff !important;
+}
+.jacket{
+   background: #EFEDED;
+}  
+.jacket_button-prev:after, .swiper-rtl .jacket_button-next:after{
+
+
+   content: url(../img/jacket/arrow/prev.svg) !important;
+   position: absolute;
+   right: -25px;
+}
+.jacket_button-next:after, .swiper-rtl .jacket_button-prev:after{
+
+   content: url(../img/jacket/arrow/nextlight.svg) !important;
+}
+.brand_title{
+   color: #08080C !important;
+}
+.human_content-text{
+   color: #08080C !important;
+
+}
+.human_content-btn{
+   a{
+   background: #08080C !important;
+      color: #fff !important;
+       @media (any-hover: hover){
+               &:hover{
+                  
+            background: #1EE1B3 !important;
+               }
+      }
+   }
+}
+.sweater {
+   background: #09090C !important;}

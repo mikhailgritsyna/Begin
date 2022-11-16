@@ -1,0 +1,22 @@
+.introduce{
+   background: #EFEDED;
+}
+.introduce_text-title{
+   color: #1E1E1E !important;
+}
+.introduce_text-sub{
+   color: #1E1E1E !important;
+   
+}
+.introduce_text-btn{
+   a{
+   color: #fff !important;
+
+      background: #1E1E1E !important;
+      @media (any-hover: hover){
+         &:hover{
+            background: #1EE1B3 !important;
+         }
+}
+   }
+}

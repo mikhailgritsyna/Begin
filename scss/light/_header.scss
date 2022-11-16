@@ -1,0 +1,32 @@
+.header_bg{
+   background: #EFEDED;
+   opacity: 0.95;
+      height: 71px;
+      width: 100%;
+      z-index: 5;
+   } 
+   .header_nav li {
+      a{
+         color: #1E1E1E;
+      }
+   } 
+   .header_menu{
+      color: #1E1E1E !important;
+   
+   }
+   @media (max-width: 870px) {
+      .header_nav ul{
+         background: #EFEDED !important;
+         li a{
+            color: #1E1E1E !important;
+         }
+      }
+   }
+   .header_clients-btn{
+      a{
+         &:first-child{
+            color: #1E1E1E !important;
+   
+         }
+      }
+   }

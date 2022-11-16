@@ -1,0 +1,54 @@
+@import "./reset";
+@import "./fonts";
+
+@import "./blocks/header";
+@import "./blocks/company";
+@import "./blocks/introduce";
+@import "./blocks/need";
+@import "./blocks/play";
+@import "./blocks/how";
+@import "./blocks/jacket";
+@import "./blocks/accordion";
+@import "./blocks/brand";
+@import "./blocks/human";
+@import "./blocks/nvidia";
+@import "./blocks/sweater";
+@import "./blocks/logo";
+@import "./blocks/footer";
+
+
+
+[class*="_container"]{
+   margin: 0 auto;
+   padding: 0 20px;
+   max-width: 1240px;
+}
+body{
+   font-family: 'Metropolis';
+   background: #08080C;
+   z-index: 1;
+
+}
+:root {
+   --bg-black: #08080C;
+
+ }
+.button{
+   a{
+      background: #FFFFFF; 
+      transition: background 0.2s ease-in;
+      border-radius: 3px; 
+      padding: 18px 40px;
+      font-size: 14px;
+      line-height: 14px;
+      /* identical to box height */
+      
+      color: #08080C;
+      font-weight: 700;
+      @media (any-hover: hover){
+         &:hover{
+            background: #1EE1B3;
+         }
+}
+}
+}

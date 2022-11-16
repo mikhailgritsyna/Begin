@@ -1,0 +1,321 @@
+.switcher {
+   max-height: 24px;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   &_legend {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+
+   }
+
+   &_radio {
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-align: center;
+      background-size: 15px;
+      padding: 7px;
+      &:last-child{
+         margin-right: 0;
+      }
+      &:focus{
+         outline: none;
+      }
+   }
+
+   &_radio-light {
+      background-image: url(../img/header/sun.svg);
+      
+   }
+
+   &_radio-dark {
+      background-image: url(../img/header/night.svg);
+   }
+
+   &_status {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      box-shadow: 0 0 0 2px rgb(0 0 0 / 0.2);
+      border-radius: 31px;
+      background-color: #CDCDCD;
+      background-repeat: no-repeat;
+      background-image: url('../img/header/status.svg');
+      background-size: 25px;
+      background-position: center;
+      transition: background-position 0.1s ease-in;
+   }
+}
+.header_bg{
+
+}
+.header {
+   background-image: url(../img/header/header.jpg);
+
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 100vh;
+   z-index: 4;
+   position: relative;
+
+   &_container {
+      min-height: 100%;
+   }
+
+   &_content {
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+       @media (max-width: 870px) {
+         align-items: normal;
+         max-height: 10px;
+       }
+   }
+
+   &_nav {
+      ul{
+          display: flex;
+          align-items: center;
+          
+          li{
+         transition: color 0.2s ease-in;
+
+             line-height: 14px;
+             /* identical to box height */
+             
+             text-align: right;
+             
+             color: #FFFFFF;
+             font-size: 14px;
+            margin-right: 44px;
+             @media (max-width: 970px) {
+               margin-right: 25px;
+             }
+            &:last-child{
+               margin-right: 0;  
+            }
+          }
+          
+      }
+     
+   }
+
+   &_clients {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+       @media (max-width: 870px) {
+         align-items: normal;
+         max-height: 100px;
+       }
+        @media (max-width: 550px) {
+         .switcher_btn{
+            position: absolute;
+            right: -12px;
+            bottom: -100px;
+            transform: rotate(90deg);
+         }
+        }
+
+   }
+
+   &_clients-btn {
+      margin-left: 35px;
+      a{
+         &:first-child{
+            
+            font-size: 14px;
+            /* identical to box height */
+            
+            margin-right: 27px;
+            color: #FFFFFF;
+                  transition: all 0.2s ease-in;
+             @media (any-hover: hover){
+                     &:hover{
+                        font-size: 14px;
+                        /* identical to box height */
+                        
+                        
+                        color: #1EE1B3;
+                        font-weight: 700;
+                     }
+            }
+         }
+         &:nth-child(2){
+            background: #1EE1B3;
+            border-radius: 3px;
+            padding: 14px 22px;
+            font-size: 14px;
+            line-height: 14px;
+            /* identical to box height */
+            
+            text-align: right;
+            
+            color: #08080C;
+            font-weight: 600;
+         
+                  transition: all 0.2s ease-in;
+             @media (any-hover: hover){
+               margin-right: 0;
+                     &:hover{
+                        background: #1EB2E1;
+                        color: #FFFFFF;
+
+                     }
+            }
+         }
+      }
+   }
+
+   &_ico {
+     position: absolute;
+     bottom: 0;
+     margin-bottom: clamp(1.25rem, 0.932rem + 1.59vw, 2.125rem);
+   left: 62px;
+   // justify-content: end;
+   img{
+      cursor: pointer;
+      margin-right: 50px;
+      &:last-child{
+         margin-right: 0;  
+      }
+   }
+   @media (max-width: 870px) {
+      left: 20px;
+    }
+   }
+   
+}
+.header {
+  
+   
+   &_text {
+      display: none;
+      text-align: right;
+      padding-top: 170px;
+       @media (max-width: 870px) {
+         display: block;
+       }
+   }
+
+   &_text-tag {
+      line-height: 16px;
+      font-size: 16px;
+/* identical to box height */
+
+
+color: #1EE1B3;
+   }
+
+   &_text-title {
+      font-size: clamp(6.25rem, 5.114rem + 5.68vw, 9.375rem);
+      font-weight: 700;
+       @media (max-width: 400px) {
+         font-size: 70px;
+       }
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+   }
+
+   &_text-sub {
+      display: inline-block;
+      max-width: 420px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 12px;
+
+      text-align: right;
+      
+      color: #FFFFFF;
+      font-family: 'Proxima Nova';
+
+   }
+}
+
+.switcher_radio:focus-visible ~ .switcher_status{
+   box-shadow: 0 0 0 2px black;
+}
+
+.switcher_radio-light:checked ~ .switcher_status{
+   background-position: right 0px center;
+}
+ .switcher_radio-auto:checked ~ .switcher_status{
+    background-position: center center;
+ }
+.switcher_radio-dark:checked ~ .switcher_status{
+   background-position: left 0px center;
+}
+.header_menu{
+   font-size: 14px;
+   line-height: 14px;
+   /* identical to box height */
+   
+   text-align: right;
+   
+   color: #FFFFFF;
+   display: none;
+    
+
+}
+ @media (max-width: 870px) {
+   .header_menu{
+      text-align: left;
+      display: block;
+   }
+   .header_nav{
+      ul li {
+      display: block;
+         color: #fff;
+         margin-left: 0px;
+         padding: 10px;
+         background: transparent;
+         transition: all .5s linear;
+       }
+       ul li:hover {
+         background: #fff;
+       }
+       ul li:hover a {
+         color: #000;
+       }
+       ul {
+         display: inline-block;  
+         padding: 0px;
+         margin-right: 0px;
+         background: #000;
+         border-radius: 3px;
+         transition: max-height 0.2s ease-out;
+         max-height: 0;
+         overflow: hidden;
+       }
+       ul li a {
+         color: rgba(255, 255, 255, 1);
+         font-weight: 600;
+
+         margin-right: 0;
+       }
+       li{
+         text-align-last: left;
+         a{
+         }
+       }
+   }
+ }
+ @media (max-width: 443px) {
+   nav{
+      position: absolute;
+   }
+ }
